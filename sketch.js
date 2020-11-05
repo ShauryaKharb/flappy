@@ -87,6 +87,9 @@ function draw() {
     }else if (gameState===PLAY){
     
     Score();
+
+    bird.collide(edge[2])
+
     gameOver.visible=false;
     ground.velocityX=-6;
     //BIRD VELOCITY
